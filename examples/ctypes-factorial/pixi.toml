@@ -23,7 +23,7 @@ clang-16 = "*"
 clang-16 = "*"
 
 [tasks]
-compile = {cmd = "gcc -shared -o src/factorial.so src/factorial.c"}
+compile = {cmd = ["gcc -shared -o src/factorial.so src/factorial.c"]}
 factorial = { cmd = "python src/factorial.py -e python"}
 start = { cmd = [
     "python",
